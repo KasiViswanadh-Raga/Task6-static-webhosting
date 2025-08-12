@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DevOps Portfolio — Raga</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">Raga<span class="dot">.</span></a>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Small, fast static sites & DevOps demos</h1>
+          <p>Portfolio snapshots, CI/CD demos, and static app playgrounds. Built with HTML + CSS — deployable on GitHub Pages.</p>
+          <p class="hero-ctas">
+            <a href="#projects" class="btn">See projects</a>
+            <a href="#about" class="btn ghost">How I work</a>
+          </p>
+        </div>
+        <div class="hero-preview" aria-hidden="true">
+          <!-- simple visual placeholder -->
+          <svg width="320" height="220" viewBox="0 0 320 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="320" height="220" rx="12" fill="#f3f4f6"/>
+            <rect x="16" y="16" width="288" height="40" rx="6" fill="#e5e7eb"/>
+            <rect x="16" y="70" width="130" height="110" rx="6" fill="#fff"/>
+            <rect x="156" y="70" width="148" height="110" rx="6" fill="#fff"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="container projects">
+      <h2>Projects</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>CI/CD Demo (Jenkins)</h3>
+          <p>Jenkins pipeline that builds, tests, and pushes a Docker image to ECR — documented with scripts and a Jenkinsfile.</p>
+          <p class="tags">Git • Jenkins • Docker • AWS</p>
+          <a class="card-link" href="#" target="_blank">View repo →</a>
+        </article>
+
+        <article class="card">
+          <h3>Static Docs Site</h3>
+          <p>Docs with a static theme, served via GitHub Pages. Live site is fast and uses only client-side JS.</p>
+          <p class="tags">HTML • CSS • GitHub Pages</p>
+          <a class="card-link" href="#" target="_blank">Live demo →</a>
+        </article>
+
+        <article class="card">
+          <h3>Terraform infra (example)</h3>
+          <p>Small infra examples: VPC, EC2, and S3 modules. Terraform modules, variables, and README for reuse.</p>
+          <p class="tags">Terraform • AWS • IaC</p>
+          <a class="card-link" href="#" target="_blank">Repo →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h2>About</h2>
+      <p>I’m practicing DevOps workflows: infra as code, CI/CD, Docker, and static deployments. This demo shows how simple assets can be hosted for free with GitHub Pages.</p>
+      <ul class="skills">
+        <li>Python</li><li>AWS</li><li>Git</li><li>Docker</li><li>Terraform</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:kasiviswanadh4321@gmail.com">kasiviswanadh4321@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/<KasiViswanadh-Raga>">@KasiViswanadh-Raga</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Raga • Hosted on GitHub Pages</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
